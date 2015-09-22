@@ -4,15 +4,16 @@ gems:
   - jekyll-sitemap
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+title: another one nerdy scala blog
+subtitle: "dev, scala, etc"
+email: tolsi.ru@gmail.com
+name: Sergey Tolmachev
 description: > 
-  A simple yet classy theme for your Jekyll website or blog.
-baseurl: "/centrarium/" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.com" # the base hostname & protocol for your site
-cover: "assets/header_image.jpg"
+  A simple yet scala developer blog from Moscow, Russia.
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://blog.tolsi.ru" # the base hostname & protocol for your site
+# todo optimize image in photoshop
+cover: "assets/zelda_items_2880x1800.jpg"
 logo: "assets/logo.png"
 
 # Build settings
@@ -31,7 +32,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: bencentra
+disqus_shortname: tolsi
 
 # livereload
 livereload: true

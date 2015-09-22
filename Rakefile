@@ -20,12 +20,10 @@ end
 #   Deploy   #
 ##############
 
-# Deploy the site
 # Ping / Notify after site is deployed
 
 desc "deploy the site"
 task :deploy do
-  system "bundle exec octopress deploy"
   system "bundle exec rake notify"
 end
 
