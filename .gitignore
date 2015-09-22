@@ -8,4 +8,5 @@ _site
 
 # Idea
 .idea
+*.iml
 Gemfile.lock
