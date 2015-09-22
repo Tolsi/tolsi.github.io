@@ -7,3 +7,7 @@ gem 'jekyll-sitemap'
 gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-livereload'
+
+gem 'mini_magick'
+gem 'html_compressor'
+gem 'anemone'
