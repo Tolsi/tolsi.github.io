@@ -33,6 +33,9 @@ jekyll-archives:
 # Disqus comments
 disqus_shortname: bencentra
 
+# livereload
+livereload: true
+
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
 
@@ -64,8 +67,8 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: "@TheBenCentra"
-    url: https://twitter.com/TheBenCentra
+    username: "@tolsi12"
+    url: https://twitter.com/tolsi12
     desc: Follow me on Twitter
     share_url: http://twitter.com/share
     share_title: ?text=
@@ -73,7 +76,7 @@ social:
 
   - name: Facebook
     icon: facebook
-    username: thebencentra
+    username: tolsi.ru
     url: 
     desc: Friend me on Facebook
     share_url: //www.facebook.com/sharer.php
@@ -82,8 +85,8 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
+    username: Tolsi
+    url: https://github.com/Tolsi
     desc: Fork me on GitHub
     share_url:
     share_title:
@@ -91,8 +94,8 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    username: Sergey Tolmachev
+    url: http://lnkd.in/QDwi3M
     desc: Connect with me on LinkedIn
     share_url: //www.linkedin.com/shareArticle
     share_title: ?mini=true
@@ -118,7 +121,7 @@ social:
 
   - name: Instagram
     icon: instagram
-    username: 
+    username: tolsi
     url: 
     desc: Follow me on Instagram
     share_url: 
