@@ -3,6 +3,7 @@ gem 'github-pages'
 gem 'rouge'
 gem 'jekyll-archives'
 gem 'jekyll-sitemap'
+gem 'jekyll-paginate'
 
 gem 'guard'
 gem 'guard-jekyll-plus'
