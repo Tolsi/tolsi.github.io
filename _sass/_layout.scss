@@ -214,6 +214,11 @@ pre code.hljs {
 			text-align: left;
 			font-size: 0.9em;
 		}
+		.post-time-to-read {
+			@include span-columns(6);
+			text-align: left;
+			font-size: 0.9em;
+		}
 		.post-categories {
 			@include span-columns(6);
 			margin-right: 0;
