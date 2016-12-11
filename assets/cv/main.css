@@ -1053,3 +1053,68 @@ h3.achievement_title {
 #language ul li a#en {
     background-image: url("/assets/cv/usa.png");
 }
+
+.social {
+    width: 100%;
+    margin: 30px;
+}
+
+.social a{
+    background: #000;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width: 60px;
+    display: block;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+    margin: auto;
+}
+
+.social a:hover{
+    transition:all ease 0.4s;
+}
+
+.social a.facebook:hover{
+    color: #fff;
+    background:#4267b2;
+}
+
+.social a.twitter:hover{
+    color: #fff;
+    background:#1da1f2;
+}
+
+.social a.google:hover{
+    color: #fff;
+    background:#db4437;
+}
+
+.social a.instagram:hover{
+    color: #fff;
+    background:#9b683f;
+}
+
+.social a.behance:hover{
+    color: #fff;
+    background:#005cff;
+}
+
+.social a.dribbble:hover{
+    color: #fff;
+    background:#ea4c89;
+}
+
+.social {
+    width: 100%;
+    float: left;
+}
+
+.social a{
+    float:left;
+    margin-right: 3%;
+    margin-top: 3%;
+}
