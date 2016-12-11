@@ -13,7 +13,7 @@ name: Sergey Tolmachev
 description: > 
   A simple yet scala developer blog from Moscow, Russia.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://blog.tolsi.ru" # the base hostname & protocol for your site
+url: "http://www.tolsi.ru/blog/" # the base hostname & protocol for your site
 # todo optimize image in photoshop
 cover: "assets/zelda_items_2880x1800.jpg"
 logo: "assets/logo.png"
@@ -34,8 +34,8 @@ jekyll-archives:
     - tags
   layout: 'archive'
   permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+    category: '/blog/category/:name/'
+    tag: '/blog/tag/:name/'
 
 # Disqus comments
 disqus_shortname: tolsi
@@ -110,8 +110,8 @@ social:
 
   - name: Google+
     icon: google-plus
-    username: 
-    url: 
+    username: Sergey Tolmachev
+    url: https://plus.google.com/u/0/+SergeyTolsiTolmachev
     desc: Add me to your Circles
     share_url: //plus.google.com/share
     share_title: ?title=
@@ -119,8 +119,8 @@ social:
 
   - name: YouTube
     icon: youtube
-    username: 
-    url: 
+    username: tolsi12
+    url: http://www.youtube.com/user/Tolsi12
     desc: Subscribe on YouTube
     share_url: 
     share_title: 
@@ -129,65 +129,32 @@ social:
   - name: Instagram
     icon: instagram
     username: tolsi
-    url: 
+    url: https://www.instagram.com/tolsi/
     desc: Follow me on Instagram
-    share_url: 
-    share_title: 
-    share_link:
-
-  - name: Pinterest
-    icon: pinterest
-    username: 
-    url: 
-    desc: Follow me on Pinterest
-    share_url: 
-    share_title: 
-    share_link:
-
-  - name: SoundCloud
-    icon: soundcloud
-    username: 
-    url: 
-    desc: Follow me on SoundCloud
-    share_url: 
-    share_title: 
-    share_link:
-
-  - name: Tumblr
-    icon: tumblr
-    username: 
-    url: 
-    desc: Follow me on Tumblr
     share_url: 
     share_title: 
     share_link:
 
   - name: Steam
     icon: steam
-    username: 
-    url: 
+    username: tolsi
+    url: http://steamcommunity.com/id/tolsi/
     desc: Friend me on Steam
     share_url: 
     share_title: 
     share_link:
 
-  - name: Dribbble
-    icon: dribbble
-    username: 
-    url: 
-    desc: Follow me on Dribble
+  - name: Phone
+    icon: signal
+    username: +79105640778
+    url: tel:+79105640778
+    desc: Call me
 
-  - name: Vimeo
-    icon: vimeo-square
-    username: 
-    url: 
-    desc: Follow me on Vimeo
-
-  - name: Vine
-    icon: vine
-    username: 
-    url: 
-    desc: Follow me on Vine
+  - name: Telegram
+    icon: telegram
+    username: tolsi1
+    url: https://telegram.me/tolsi1
+    desc: Write me to Telegram
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
