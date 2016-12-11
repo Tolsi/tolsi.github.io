@@ -38,17 +38,19 @@
          ***************************************************/
 
         $('.main_nav li a, a.more').on('click', function (e) {
-            e.preventDefault();
-            var anchor = $(this);
+            if (e.target.href.indexOf("http") == -1) {
+                e.preventDefault();
+                var anchor = $(this);
 
-            //animate content scroll
-            // $('html, body').stop().animate({
-            //   scrollTop: $(anchor.attr('href')).offset().top
-            // }, 900,'easeInOutExpo');
+                //animate content scroll
+                // $('html, body').stop().animate({
+                //   scrollTop: $(anchor.attr('href')).offset().top
+                // }, 900,'easeInOutExpo');
 
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            }, 1000);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 1000);
+            }
         });
 
         /***************************************************
