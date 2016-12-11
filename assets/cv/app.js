@@ -38,18 +38,18 @@
          ***************************************************/
 
         $('.main_nav li a, a.more').on('click', function (e) {
-            if (e.target.href.indexOf("http") == -1) {
+            var anchor = $(this);
+            if (anchor.attr('href').indexOf("/") == -1) {
                 e.preventDefault();
-                var anchor = $(this);
 
                 //animate content scroll
-                // $('html, body').stop().animate({
-                //   scrollTop: $(anchor.attr('href')).offset().top
-                // }, 900,'easeInOutExpo');
-
                 $('html, body').stop().animate({
-                    scrollTop: $(anchor.attr('href')).offset().top
-                }, 1000);
+                  scrollTop: $(anchor.attr('href')).offset().top
+                }, 1000, 'easeInOutExpo');
+
+                // $('html, body').stop().animate({
+                //     scrollTop: $(anchor.attr('href')).offset().top
+                // }, 1000);
             }
         });
 

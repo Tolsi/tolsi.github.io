@@ -522,6 +522,11 @@ h3.achievement_title {
     font-weight: 300;
 }
 
+.skills_text {
+    margin-top: 60px;
+    display: flex;
+}
+
 /* -----------------------------------------
    6. MAIN NAVIGATION SECTION
 ----------------------------------------- */
