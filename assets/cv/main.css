@@ -1095,17 +1095,47 @@ h3.achievement_title {
 
 .social a.instagram:hover{
     color: #fff;
-    background:#9b683f;
+    background:#e1306c;
 }
 
-.social a.behance:hover{
+.social a.vk:hover{
     color: #fff;
-    background:#005cff;
+    background:#45668e;
 }
 
-.social a.dribbble:hover{
+.social a.telegram:hover{
     color: #fff;
-    background:#ea4c89;
+    background:#0088cc;
+}
+
+.social a.telegram:hover{
+    color: #fff;
+    background:#0088cc;
+}
+
+.social a.github:hover{
+    color: #fff;
+    background:#333;
+}
+
+.social a.linkedin:hover{
+    color: #fff;
+    background:#0077b5;
+}
+
+.social a.youtube:hover{
+    color: #fff;
+    background:#cd201f;
+}
+
+.social a.steam:hover{
+    color: #fff;
+    background:#00adee;
+}
+
+.social a.skype:hover{
+    color: #fff;
+    background:#00aff0;
 }
 
 .social {
