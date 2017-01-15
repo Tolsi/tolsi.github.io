@@ -3,7 +3,7 @@ gems:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
-#  - jekyll-multiple-languages-plugin
+  - jekyll-multiple-languages-plugin
 
 # Site settings
 title: another one nerdy scala blog
@@ -24,8 +24,8 @@ paginate: 5
 paginate_path: "/blog/page:num/"
 
 # Multiple languages settings (see https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin)
-#languages: ["en", "ru"]
-#exclude_from_localizations: ["assets", "images", "css"]
+languages: ["ru", "en"]
+exclude_from_localizations: ["assets", "images", "css"]
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives: 

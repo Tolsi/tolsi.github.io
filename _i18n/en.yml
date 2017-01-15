@@ -1,0 +1,24 @@
+sections:
+  about_me: About me
+  education: Education
+  my_way: My way
+  skills: Skills
+  portfolio: Portfolio
+  contacts: Contacts
+  blog: Blog
+
+about_me:
+  full_name: Sergey Tolmachev
+  description: Java and Scala programmer, I take out things from high shelves and do it with pleasure
+  get_acquainted: Check out more
+
+education:
+  where_1: <a href="https://www.epam.com/about/company/social-responsibility/education">Education at EPAM Systems</a>
+  what_1: Software developement on the Java platform
+  when_1: 2011-2012
+  description_1: "The program generates a set of knowledge and skills that meet the qualifications of engineering software development on the Java platform industrial level. The program forms the knowledge and practical skills in the following areas: industrial production process software development process, technological aspects of the software development platform Java. The program consists of thematic modules, which form a systematic approach to solving the problems of software development platform Java."
+
+  where_2: <a href="http://www.rsreu.ru/en/">Ryazan State Radio Engineering University</a>
+  what_2: Software computer technology
+  when_2: 2009-2014
+  description_2: The specifically tailored to work in the areas of databases, intelligent software systems, multimedia technologies and software systems for various applications. Students receive basic training in mathematics, develop technology of structural, procedural and modular, functional, object-oriented parallel and visual programming. Graduates of 230105 - is highly skilled programmers for organizations and businesses.

@@ -75,13 +75,13 @@
             </ul>
         </div> -->
         <ul class="main_nav">
-            <li><a href="#top" class="">Обо мне</a></li>
-            <li><a href="#education" class="">Образование</a></li>
-            <li><a href="#path" class="">Путь</a></li>
-            <li><a href="#skills" class="">Навыки</a></li>
-            <li><a href="#portfolio" class="">Портфолио</a></li>
-            <li><a href="#contact" class="">Контакты</a></li>
-            <!-- <li><a href="/blog/" class="">Блог</a></li> -->
+            <li><a href="#top" class="">{% t sections.about_me %}</a></li>
+            <li><a href="#education" class="">{% t sections.education %}</a></li>
+            <li><a href="#path" class="">{% t sections.my_way %}</a></li>
+            <li><a href="#skills" class="">{% t sections.skills %}</a></li>
+            <li><a href="#portfolio" class="">{% t sections.portfolio %}</a></li>
+            <li><a href="#contact" class="">{% t sections.contacts %}</a></li>
+            <!-- <li><a href="/blog/" class="">{% t blog %}</a></li> -->
             <div class="tmhr"></div>
         </ul>
     </div>
@@ -116,9 +116,9 @@
             <!-- BEGIN Name Box -->
             <div class="name-box">
 
-                <h2 class="zero_margin">Толмачёв Сергей</h2>
+                <h2 class="zero_margin">{% t about_me.full_name %}</h2>
 
-                <p class="subline">Java и Scala программист, достаю вещи с высоких полок и делаю это с удовольствием</p>
+                <p class="subline">{% t about_me.description %}</p>
 
             </div>
             <!-- END Name Box -->
@@ -128,7 +128,7 @@
             <!-- BEGIN Check Out More Button -->
             <div class="text-center">
 
-                <a href="#education" class="button middle oval more">Познакомимся получше</a>
+                <a href="#education" class="button middle oval more">{% t about_me.get_acquainted %}</a>
 
             </div>
             <!-- END Check Out More Button -->
@@ -143,7 +143,7 @@
         <div id="education" class="row twelvecol content-wrapper">
 
             <div class="text-center">
-                <h2 class="main-title title">Образование</h2>
+                <h2 class="main-title title">{% t sections.education %}</h2>
                 <div class="hr"></div>
             </div>
 
@@ -158,19 +158,14 @@
                             <img src="/assets/cv/5.png" alt="">
                         </div>
 
-                        <h3 class="title_with_image">Учебный центр EPAM Systems</h3>
-                        <h4 class="subtitle_with_image">Разработка программного обеспечения на платформе Java</h4>
-                        <h4 class="year_inline_image">2011-2012</h4>
+                        <h3 class="title_with_image">{% t education.where_1 %}</h3>
+                        <h4 class="subtitle_with_image">{% t education.what_1 %}</h4>
+                        <h4 class="year_inline_image">{% t education.when_1 %}</h4>
 
                     </div>
                     <!-- END OF IMAGE + DETAILS -->
 
-                    <p>Программа формирует комплекс знаний и практических навыков, соответствующих квалификации
-                        инженер-разработчик программного обеспечения на платформе Java промышленного уровня. Программа
-                        формирует знания и практические навыки в следующих областях: промышленный процесс производства
-                        ПО, процесс разработки ПО, технологические аспекты процесса разработки ПО на платформе Java.
-                        Программа состоит из тематических модулей, формирующих системный подход решения задач разработки
-                        ПО на платформе Java.</p>
+                    <p>{% t education.description_1 %}</p>
 
                 </div>
 
@@ -183,19 +178,14 @@
                             <img src="/assets/cv/6.png" alt="">
                         </div>
 
-                        <h3 class="title_with_image">Рязанский государственный радиотехнический университет</h3>
-                        <h4 class="subtitle_with_image">Программное обеспечение вычислительной техники</h4>
-                        <h4 class="year_inline_image">2009-2014</h4>
+                        <h3 class="title_with_image">{% t education.where_2 %}</h3>
+                        <h4 class="subtitle_with_image">{% t education.what_2 %}</h4>
+                        <h4 class="year_inline_image">{% t education.when_2 %}</h4>
 
                     </div>
                     <!-- END OF IMAGE + DETAILS -->
 
-                    <p>Специальность ориентирована на работу в областях применения баз данных, интеллектуальных
-                        программных систем, мультимедиатехнологий и программного обеспечения систем различного
-                        применения. Студенты получают фундаментальную подготовку по математике, осваивают технологии
-                        структурного, процедурно-модульного, функционального, объектно-ориентированного, параллельного и
-                        визуального программирования. Выпускники специальности 230105 — это высококвалифицированные
-                        программисты для организаций и предприятий.</p>
+                    <p>{% t education.description_2 %}</p>
 
                 </div>
 
@@ -208,7 +198,7 @@
         <div id="path" class="row twelvecol content-wrapper">
 
             <div class="text-center">
-                <h2 class="main-title title">Мой путь</h2>
+                <h2 class="main-title title">{% t sections.my_way %}</h2>
                 <div class="hr"></div>
             </div>
 
@@ -298,7 +288,7 @@
         <div id="skills" class="row twelvecol content-wrapper">
 
             <div class="text-center">
-                <h2 class="main-title title">Мои навыки</h2>
+                <h2 class="main-title title">{% t sections.skills %}</h2>
                 <div class="hr"></div>
             </div>
 
@@ -343,7 +333,7 @@
         <div id="portfolio" class="row twelvecol content-wrapper">
 
             <div class="text-center">
-                <h2 class="main-title title">Портфолио</h2>
+                <h2 class="main-title title">{% t sections.portfolio %}</h2>
                 <div class="hr"></div>
             </div>
 
@@ -421,7 +411,7 @@
         <div id="contact" class="row twelvecol content-wrapper">
 
             <div class="text-center">
-                <h2 class="main-title title">Контакты</h2>
+                <h2 class="main-title title">{% t sections.contacts %}</h2>
                 <div class="hr"></div>
             </div>
 
