@@ -64,18 +64,18 @@ way:
   all_when: "18 июля 1992 - ∞"
   all_description: "All my life I have different undermining and pet projects. I wrote in php / basic / pascal / c # / go / ruby ​​/ c ++ / qt / kotlin / js / lua / bat / bash / delphi /.../ ???, doing a lot of interesting thingsЖ from tutoring to develop mobile applications running for Windows Mobile 2005 with 1C integration and web applications for OpenWRT on Scala, <a href=\"https://www.bios-mods.com/forum/Thread-Request-Acer-M3-581TG-Bios-Unlock?pid=53320#pid53320\">laptop BIOS patching</a>, <a href=\"http://4pda.ru/forum/index.php?showtopic=638230&view=findpost&p=53596218\">APK application patching</a> and <a href=\"http://4pda.ru/forum/index.php?showtopic=413778&st=13260#entry33810025\">Android firmware</a> without sources, <a href=\"http://4pda.ru/forum/index.php?showtopic=274&st=160#entry2493905\">created the engine Warcraft 2 mod for WM6</a>, restored the firmware of different devices on the serial port and all the other geeks perversion."
 
-  skills:
-    what_1: "Using a suitable development methodology"
-    description_1: "My experience in the development of object-oriented languages for more than five years. Now I'm sure I know the answer to the question: \"The object is different from the class?\" :) Also, I use the functionality that Scala has brought in my job, I try to write as short, simple and clear code to other developers. After all, the less code, the easier it is to maintain it afterwards."
+skills:
+  what_1: "Using a suitable development methodology"
+  description_1: "My experience in the development of object-oriented languages for more than five years. Now I'm sure I know the answer to the question: \"The object is different from the class?\" :) Also, I use the functionality that Scala has brought in my job, I try to write as short, simple and clear code to other developers. After all, the less code, the easier it is to maintain it afterwards."
 
-    what_2: "More responsibility"
-    description_2: "In many projects, particularly freelance, I speak not only as a developer, but as devops and consultant. I'm no better than your favorite admin can deploy cluster of 500 machines, but I can fully deploy the architecture developed by the project to me AWS / DigitalOcean / AnyVPS, configure the backup database, operating system and monitoring of key metrics. I participated in many projects in different roles, I have seen the development and support from a variety of angles. If I had not done before it is something I can always understand. So I can be responsible for all technical aspects of your project. I'm sure of it :)"
+  what_2: "More responsibility"
+  description_2: "In many projects, particularly freelance, I speak not only as a developer, but as devops and consultant. I'm no better than your favorite admin can deploy cluster of 500 machines, but I can fully deploy the architecture developed by the project to me AWS / DigitalOcean / AnyVPS, configure the backup database, operating system and monitoring of key metrics. I participated in many projects in different roles, I have seen the development and support from a variety of angles. If I had not done before it is something I can always understand. So I can be responsible for all technical aspects of your project. I'm sure of it :)"
 
-    what_3: "I am open to everything new!"
-    description_3: "I try to keep up with modern approaches and technologies in software development. I catch food for the mind of articles, books, documentation, blogs, meetups and conferences. Please contact me in advance and we can talk on any event or online."
+  what_3: "I am open to everything new!"
+  description_3: "I try to keep up with modern approaches and technologies in software development. I catch food for the mind of articles, books, documentation, blogs, meetups and conferences. Please contact me in advance and we can talk on any event or online."
 
-    what_4: "I try not to forget for whom we make the programs"
-    description_4: "In solving problems, I try to look at them with a critical eye. \"Why is it necessary to do?\" \"If it can cause any harm or inconvenience, then you really want me to do it?\" Do not be surprised to hear these questions from me. I'm doing what I should, but I try to think about it. And do not forget to mention individually, if you are not interested in this my questions :D"
+  what_4: "I try not to forget for whom we make the programs"
+  description_4: "In solving problems, I try to look at them with a critical eye. \"Why is it necessary to do?\" \"If it can cause any harm or inconvenience, then you really want me to do it?\" Do not be surprised to hear these questions from me. I'm doing what I should, but I try to think about it. And do not forget to mention individually, if you are not interested in this my questions :D"
 
 quote:
   text: "Feel free to contact - this is the key to personal and professional success!"
