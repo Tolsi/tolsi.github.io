@@ -32,34 +32,56 @@ way:
   epam_when: "December 2012 - May 2013"
   epam_description: "My first real experience of working in an office. Excellent office, new computers, and most importantly - a good team that can and should be developed. I began to feel confident in the field of enterprise web development, with the help of his comrades. Nick, Max, Cyril, hello! :)"
 
-  aspect_what: "Java/Scala программист в <a href=\"http://aspect-systems.ru/\">Aspect systems</a>"
+  aspect_what: "Java/Scala developer at <a href=\"http://aspect-systems.ru/\">Aspect systems</a>"
   aspect_when: "Декабрь 2012 - Май 2013"
   aspect_description: "My first real experience of working in an office. Excellent office, new computers, and most importantly - a good team that can and should be developed. I began to feel confident in the field of enterprise web development, with the help of his comrades. Nick, Max, Cyril, hello! :)"
 
-  molpred_what: "<a href=\"http://molpred62.ru/\">Школа молодёжного предпринимательства</a>"
+  molpred_what: "<a href=\"http://molpred62.ru/\">Youth Entrepreneurship School</a>"
   molpred_when: "2013"
-  molpred_description: "Интересный проект, познал много интересной информации, познакомился с кучей приятнейших потенциальных и реальных предпринимателей. Однажды всё реализуем, надо только верить."
+  molpred_description: "An interesting project, I have learned a lot of interesting information, get to know the nicest potential and real entrepreneurs. Once we implement everything, you just have to believe."
 
-  iage_what: "NodeJS программист в <a href=\"http://iage.net/\">iAge</a>"
-  iage_when: "Декабрь 2013 - Февраль 2014"
-  iage_description: "Я занимался ресерчем для старта проекта Auditorius, ныне крупного игрока на рынке RTB. Проверял быстродействие разных хранилищ данных, подбирал под нужные задачи. Виталя ;)"
+  iage_what: "NodeJS developer at <a href=\"http://iage.net/\">iAge</a>"
+  iage_when: "December 2013 - February 2014"
+  iage_description: "I was researching the storage Auditorius to start the project, is now a major player on the RTB market. Tested different performance data warehousing, picking up a desired task. Vitally ;)"
 
-  appcraft_what: "Java/Scala программист в AppCraft Lab"
-  appcraft_when: "Февраль 2014 - Февраль 2015"
-  appcraft_description: "За этот интересные год разработал 3 мобильных Android приложения и пару backend приложений для мобильных, научился заключать договора и составлять акты, проводить платежки и работать с год фирмой по договору. Получил опыт разработки на Java и смог применить Scala при разработке одного из них. К этому времени я начинаю понимать, что моя страсть - Backend приложения, что люблю писать логику, а не интерфейсы. Саша ;)"
+  appcraft_what: "Java/Scala developer at AppCraft Lab"
+  appcraft_when: "February 2014 - February 2015"
+  appcraft_description: "During this exciting 3 year developed Android mobile application and a pair of backend applications for mobile, learned to enter into contracts and make acts to hold bills and work with government by the contract. Got experience developing in Java and Scala was able to apply in the development of one of them. By this time, I begin to realize that my passion - Backend applications that like to write the logic, rather than user interfaces. Sasha ;)"
 
-  dca_what: "Scala программист в <a href=\"http://www.facetz.net/\">Data-Centric Alliance (DCA), Facetz team</a>"
-  dca_when: "Февраль 2015 - Февраль 2016"
-  dca_description: "Занимался поддержкой и разработкой Map-Reduce задач, нагруженных REST сервисов и системы Realtime аналитики на Akka. Big Data - это было новая сфера для меня и я не сказал бы, что она мне очень интересна. Во всем этом были интересны оптимизационные задачи нагруженных сервисов, но не обыденные задачи переложи/загрузи, которые в основном возникают в этой сфере. Миша, Оли, Артемы, привет!"
+  dca_what: "Scala developer at <a href=\"http://www.facetz.net/\">Data-Centric Alliance (DCA), Facetz team</a>"
+  dca_when: "February 2015 - February 2016"
+  dca_description: "I was engaged in the support and development of Map-Reduce tasks, loaded REST services and Realtime Systems analysts using Akka. Big Data - it was a new field for me and I would not say that it is very interesting to me. In all this it was interesting optimization problems of loaded services, but it was not interested to solve problems of ETL, which mostly occur in this area. Misha, Olyas, Artems, hello!"
 
-  xpost_what: "Scala программист в <a href=\"http://www.xpost.tech/\">XPost</a>"
-  xpost_when: "Февраль 2016 - Октябрь 2016"
-  xpost_description: "Вместе с отличными специалистами участвовал в разработке архитектуры и реализации заточенной на большие нагрузки Backoffice системы трейдинговой платформы. Было у кого и чему поучиться! Вова, Серега, Марина ;)"
+  xpost_what: "Scala developer at <a href=\"http://www.xpost.tech/\">XPost</a>"
+  xpost_when: "February 2016 - October 2016"
+  xpost_description: "Together with the excellent experts participated in the development of architecture and implementation sharpened for big load backoffice system of trading platform. I learned a lot! Vova, Serge, Marina ;)"
 
-  waves_what: "Scala программист в <a href=\"https://wavesplatform.com/\">Waves platform</a>"
-  waves_when: "Октябрь 2016 - ..."
-  waves_description: "Теперь я занимаюсь разработкой и поддержкой Blockchain платформы Waves platform. С 2011 был интересен блокчейн и проекты, связанные с ним и я счастлив вернуться и погрузиться с головой в работу над такой амбициозной платформой. Это <a href=\"https://github.com/wavesplatform/\">Opensource проект</a> с немаленьким community пользователей платформы, что только добавляет челенжей и интереса. Здесь я лучше познал криптографию и общую теорию блокчейн систем и это очень круто."
+  waves_what: "Scala developer at <a href=\"https://wavesplatform.com/\">Waves platform</a>"
+  waves_when: "October 2016 - ..."
+  waves_description: "Now I am engaged in the development and support of Blockchain Waves platform platform. Since 2011 was interesting blockchain and projects associated with it, and I'm happy to come back and dive into work on such an ambitious platform. This is <a href=\"https://github.com/wavesplatform/\"> Opensource project </a> with rather big community platform users, which only adds challenges and interest. Here, I knew better, and the general theory of cryptography of blockchain systems and it is very cool. Dream team! :D"
 
-  all_what: "Гик и фрилансер по жизни"
+  all_what: "Geek and freelancer throughout life"
   all_when: "18 июля 1992 - ∞"
-  all_description: "Всю свою жизнь я имею разные подработки и pet проекты. Я писал на php/basic/pascal/c#/go/ruby/c++/qt/kotlin/js/lua/bat/bash/delphi/.../???, занимался многими интересными вещами: от репетиторства до разработки мобильных приложений под Windows Mobile 2005 с интеграцией 1С и веб приложений под OpenWRT на Scala, <a href=\"https://www.bios-mods.com/forum/Thread-Request-Acer-M3-581TG-Bios-Unlock?pid=53320#pid53320\">патчил BIOS ноутбука</a>, <a href=\"http://4pda.ru/forum/index.php?showtopic=638230&view=findpost&p=53596218\">изменял APK приложения</a> и <a href=\"http://4pda.ru/forum/index.php?showtopic=413778&st=13260#entry33810025\">прошивки</a> без исходников, <a href=\"http://4pda.ru/forum/index.php?showtopic=274&st=160#entry2493905\">пилил сборку движка Warcraft 2 для WM6</a>, восстанавливал прошивки железяк по серийному порту и всякие прочие гиковые извращения."
+  all_description: "All my life I have different undermining and pet projects. I wrote in php / basic / pascal / c # / go / ruby ​​/ c ++ / qt / kotlin / js / lua / bat / bash / delphi /.../ ???, doing a lot of interesting thingsЖ from tutoring to develop mobile applications running for Windows Mobile 2005 with 1C integration and web applications for OpenWRT on Scala, <a href=\"https://www.bios-mods.com/forum/Thread-Request-Acer-M3-581TG-Bios-Unlock?pid=53320#pid53320\">laptop BIOS patching</a>, <a href=\"http://4pda.ru/forum/index.php?showtopic=638230&view=findpost&p=53596218\">APK application patching</a> and <a href=\"http://4pda.ru/forum/index.php?showtopic=413778&st=13260#entry33810025\">Android firmware</a> without sources, <a href=\"http://4pda.ru/forum/index.php?showtopic=274&st=160#entry2493905\">created the engine Warcraft 2 mod for WM6</a>, restored the firmware of different devices on the serial port and all the other geeks perversion."
+
+  skills:
+    what_1: "Using a suitable development methodology"
+    description_1: "My experience in the development of object-oriented languages for more than five years. Now I'm sure I know the answer to the question: \"The object is different from the class?\" :) Also, I use the functionality that Scala has brought in my job, I try to write as short, simple and clear code to other developers. After all, the less code, the easier it is to maintain it afterwards."
+
+    what_2: "More responsibility"
+    description_2: "In many projects, particularly freelance, I speak not only as a developer, but as devops and consultant. I'm no better than your favorite admin can deploy cluster of 500 machines, but I can fully deploy the architecture developed by the project to me AWS / DigitalOcean / AnyVPS, configure the backup database, operating system and monitoring of key metrics. I participated in many projects in different roles, I have seen the development and support from a variety of angles. If I had not done before it is something I can always understand. So I can be responsible for all technical aspects of your project. I'm sure of it :)"
+
+    what_3: "I am open to everything new!"
+    description_3: "I try to keep up with modern approaches and technologies in software development. I catch food for the mind of articles, books, documentation, blogs, meetups and conferences. Please contact me in advance and we can talk on any event or online."
+
+    what_4: "I try not to forget for whom we make the programs"
+    description_4: "In solving problems, I try to look at them with a critical eye. \"Why is it necessary to do?\" \"If it can cause any harm or inconvenience, then you really want me to do it?\" Do not be surprised to hear these questions from me. I'm doing what I should, but I try to think about it. And do not forget to mention individually, if you are not interested in this my questions :D"
+
+quote:
+  text: "Feel free to contact - this is the key to personal and professional success!"
+
+portfolio:
+  description_1: "Bitcoin to rubles exchange service."
+  description_2: "Bot for the automatic creation of items in the MMORPG game."
+  description_3: "Custom trigger extender plugin - a plugin for parsing Advanced Combat Tracker, greatly enhances the user triggers."
+  description_4: "Parser for large log files of MMORPG game."
