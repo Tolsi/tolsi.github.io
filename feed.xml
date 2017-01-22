@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>another one nerdy scala blog</title>
+    <description>A simple yet scala developer blog from Moscow, Russia.
+</description>
+    <link>http://www.tolsi.ru/blog///</link>
+    <atom:link href="http://www.tolsi.ru/blog///feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Jan 2017 13:11:19 +0300</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 13:11:19 +0300</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+  </channel>
+</rss>
