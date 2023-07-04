@@ -241,36 +241,36 @@
 
     //Auto refresh on window resize
 
-    var w = window,
-      d = document,
-      e = d.documentElement,
-      g = d.getElementsByTagName('body')[0],
-      x = w.innerWidth || e.clientWidth || g.clientWidth;
-    window.onresize = function (event) {
-      var t = w.innerWidth || e.clientWidth || g.clientWidth;
-
-
-      // if viewportWidth width <= 479
-      if (window.innerWidth <= 479) {
-        // load mobile script
-
-        if (window.innerHeight < window.innerWidth) {
-          document.location.reload(true);
-        }
-
-      } else { // viewportWidth width > 479
-        // load desktop script
-
-        //Auto refresh on window resize
-
-
-        if (t !== x) {
-          document.location.reload(true);
-        }
-      }
-
-
-    }
+    // var w = window,
+    //   d = document,
+    //   e = d.documentElement,
+    //   g = d.getElementsByTagName('body')[0],
+    //   x = w.innerWidth || e.clientWidth || g.clientWidth;
+    // window.onresize = function (event) {
+    //   var t = w.innerWidth || e.clientWidth || g.clientWidth;
+    //
+    //
+    //   // if viewportWidth width <= 479
+    //   if (window.innerWidth <= 479) {
+    //     // load mobile script
+    //
+    //     if (window.innerHeight < window.innerWidth) {
+    //       document.location.reload(true);
+    //     }
+    //
+    //   } else { // viewportWidth width > 479
+    //     // load desktop script
+    //
+    //     //Auto refresh on window resize
+    //
+    //
+    //     if (t !== x) {
+    //       document.location.reload(true);
+    //     }
+    //   }
+    //
+    //
+    // }
 
 
   </script>
