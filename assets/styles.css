@@ -775,7 +775,7 @@ textarea.w-input, textarea.w-select {
   display: none !important
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1380px) {
   .w-container {
     max-width: 728px
   }
@@ -1964,7 +1964,7 @@ textarea.w-input, textarea.w-select {
   position: static
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1380px) {
   .w-nav[data-collapse=medium] .w-nav-menu {
     display: none
   }
@@ -5233,7 +5233,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-row-end: span 1
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1380px) {
   body {
     font-size: 16px
   }
