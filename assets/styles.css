@@ -4021,10 +4021,6 @@ h1, h2, h3, h4, h5, h6 {
   grid-column-gap: 64px
 }
 
-.info-list-column {
-  width: 50%
-}
-
 .info-list-column.disciplines-column {
   display: -webkit-box;
   display: -webkit-flex;
