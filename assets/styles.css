@@ -5958,3 +5958,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
+
+a {
+  text-decoration: underline;
+}
