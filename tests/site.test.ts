@@ -57,7 +57,7 @@ function loadAt(w: number, h: number) {
   ab(`set viewport ${w} ${h}`);
   execSync("sleep 0.5");
   ab(`open ${freshUrl()}`);
-  ab("wait --load networkidle");
+  ab("wait --load domcontentloaded");
 }
 
 beforeAll(() => {
@@ -67,7 +67,7 @@ beforeAll(() => {
   });
   execSync("sleep 0.5");
   ab(`open ${freshUrl()}`);
-  ab("wait --load networkidle");
+  ab("wait --load domcontentloaded");
 });
 
 afterAll(() => {
@@ -85,7 +85,7 @@ describe("tol.si — core checks", () => {
 
   it(".main_wrapper is hidden on load, visible after intro animation (~8s)", async () => {
     ab(`open ${freshUrl()}`);
-    ab("wait --load networkidle");
+    ab("wait --load domcontentloaded");
     const opacityOnLoad = abEval(
       "getComputedStyle(document.querySelector('.main_wrapper')).opacity"
     );
@@ -100,7 +100,7 @@ describe("tol.si — core checks", () => {
 
   it("page-cover heading is viewport-centered during intro", () => {
     ab(`open ${freshUrl()}`);
-    ab("wait --load networkidle");
+    ab("wait --load domcontentloaded");
     const raw = abEval(`(() => {
       var el = document.querySelector('.page-cover-heading');
       if (!el) return JSON.stringify({error: 'not found'});
