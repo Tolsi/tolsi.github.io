@@ -418,7 +418,8 @@
   var transitionEl = document.querySelector('body .transition');
   if (transitionEl) transitionEl.style.display = 'none';
 
-  // Prevent scroll during intro and force viewport to top
+  // Prevent browser scroll restoration and force viewport to top
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
   document.body.classList.add('no-scroll-transition');
   setTimeout(function () {
