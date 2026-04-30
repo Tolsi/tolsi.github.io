@@ -325,8 +325,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info-list-block.discipline-list-block {
-  margin-right: 32px;
   margin-bottom: 132px
+}
+
+.disciplines-sub-row .info-list-block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%
 }
 
 /* Page cover (intro animation) */
