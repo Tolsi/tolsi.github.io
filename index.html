@@ -277,6 +277,14 @@
 
 
   <style>
+    @media screen and (min-width: 768px) {
+      .section-info-list .info-list-wrapper {
+        flex-direction: row;
+      }
+    }
+  </style>
+
+  <style>
     .radio_label {
       pointer-events: none;
     }
@@ -700,7 +708,7 @@
           href="mailto:tolsi.ru@gmail.com" class="footer-link-item apply-fg-color w-inline-block"><h3
           class="footer-link-text text-small">→ tolsi.ru@gmail.com</h3></a>
         </div>
-        <div id="w-node-e0f24c64-6a87-1856-ea91-9828808d493a-808d4926" class="footer-item-wrapper">
+        <div id="w-node-e0f24c64-6a87-1856-ea91-9828808d493a-808d4926" class="footer-item-wrapper" style="grid-column: -1; justify-self: end; text-align: right">
           <div class="footer-copyright-item apply-fg-color text-small">
             <div class="footer-copyright-text">© Tolsi <span class="footer-copyright-year">0000</span></div>
           </div>
@@ -834,6 +842,7 @@
     setTimeout(() => {
       $('.page-cover-content').animate({opacity: 0}, 500);
       $('.page-cover').animate({opacity: 0}, 500);
+      $('.main_wrapper').animate({opacity: 1}, 500);
       setTimeout(() => {
         $('.page-cover').css("display", "none");
       }, introDurationMS);
