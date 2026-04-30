@@ -184,3 +184,28 @@ describe("tol.si — layout: text visible and no overlap", () => {
     });
   }
 });
+
+const DISCIPLINES_BLOCKS_JS = `(() => {
+  var blocks = Array.from(document.querySelectorAll('.disciplines-sub-row .info-list-block'));
+  if (blocks.length < 2) return JSON.stringify({error: 'not enough blocks: ' + blocks.length});
+  var r0 = blocks[0].getBoundingClientRect(), r1 = blocks[1].getBoundingClientRect();
+  return JSON.stringify({top0: Math.round(r0.top), left0: Math.round(r0.left), top1: Math.round(r1.top), left1: Math.round(r1.left)});
+})()`.trim().replace(/\n/g, " ");
+
+describe("tol.si — disciplines column layout", () => {
+  it("disciplines sub-row is 2 columns side-by-side at 1024px (>=900px)", () => {
+    loadAt(1024, 768);
+    const d = JSON.parse(abEval(DISCIPLINES_BLOCKS_JS));
+    expect(d.error).toBeUndefined();
+    expect(Math.abs(d.top0 - d.top1)).toBeLessThan(20);
+    expect(d.left1).toBeGreaterThan(d.left0 + 50);
+  });
+
+  it("disciplines sub-row is 1 column stacked at 768px (<900px)", () => {
+    loadAt(768, 1024);
+    const d = JSON.parse(abEval(DISCIPLINES_BLOCKS_JS));
+    expect(d.error).toBeUndefined();
+    expect(d.top1).toBeGreaterThan(d.top0 + 20);
+    expect(Math.abs(d.left0 - d.left1)).toBeLessThan(20);
+  });
+});

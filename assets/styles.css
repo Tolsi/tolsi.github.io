@@ -249,6 +249,19 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column
 }
 
+.disciplines-sub-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 64px
+}
+
 .info-list-heading {
   margin-top: auto;
   margin-bottom: auto
@@ -482,6 +495,7 @@ h1, h2, h3, h4, h5, h6 {
     -ms-grid-column-span: 1;
     grid-column-end: span 1
   }
+
 }
 
 /* Responsive: desktop min font sizes (1440px..992px) */
@@ -539,6 +553,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Responsive: disciplines sub-row collapses below 900px */
+@media screen and (max-width: 899px) {
+  .disciplines-sub-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0
+  }
+}
+
 /* Responsive: mobile (<=479px) */
 @media screen and (max-width: 479px) {
   .info-list-column.disciplines-column {
@@ -548,6 +574,7 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column
   }
+
 
   .info-list-block.discipline-list-block {
     margin-bottom: 3.5rem
