@@ -22,6 +22,8 @@
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta name="keywords" content="fractional CTO, tech lead, blockchain developer, blockchain architect, Scala developer, Rust developer, software architect, CTO for hire, startup CTO, Sergey Tolmachev, Tolsi"/>
   <link href="assets/styles.css?v=9" rel="stylesheet" type="text/css"/>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/FKDisplay-Regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/mabry-regular-pro.woff2" crossorigin>
   <link href="https://tol.si" rel="canonical"/>
   <script type="application/ld+json">
   {
@@ -113,22 +115,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#da532c">
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();
-      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(20926237, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true
-    });
-  }
-  </script>
-  <!-- /Yandex.Metrika counter -->
 
   <script>
     /* Auto-update copyright year */
@@ -386,7 +372,7 @@
 <script>
   //************ INTRO ANIMATION + SCROLL COLOR ************
 
-  var introDurationMS = 2300;
+  var introDurationMS = 800;
   var exitDurationMS  = 1750;
 
   // Helpers to replace jQuery animate({opacity}) with CSS transition
@@ -459,8 +445,25 @@
         b = Math.floor(startColor.b + Math.min(256, Math.max((endColor.b - startColor.b) * c, 0)));
       }
       if (bgEl) bgEl.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-    });
+    }, { passive: true });
   });
 </script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(20926237, "init", {
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true
+  });
+}
+</script>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
