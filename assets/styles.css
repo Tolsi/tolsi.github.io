@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-cover-content {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
