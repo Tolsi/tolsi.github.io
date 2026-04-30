@@ -31,7 +31,7 @@ Single page: `index.html` is the entire site. `assets/styles.css` is the main st
 - Scroll-driven background color gradient: orange `rgb(218,93,35)` → off-white `rgb(245,244,238)` keyed to `.section-info-list` offset
 - Auto-updating copyright year via `.footer-copyright-year`
 
-**Inline `<style>` blocks** inside `index.html` override `assets/styles.css` for several things (scrollbar hiding, font smoothing, transition visibility). Edit these carefully — there are multiple inline style blocks scattered through the file.
+**All styles live in `assets/styles.css`** — no inline `<style>` blocks in `index.html`. Bump the `?v=N` cache-bust param on the `<link>` tag whenever CSS changes.
 
 **Nav component** is fully commented out in `index.html`.
 
@@ -41,3 +41,16 @@ Single page: `index.html` is the entire site. `assets/styles.css` is the main st
 - `.section-info-list` (second) — art projects, personal projects, public talks
 
 CV PDF: `assets/_Tolmachev_CV_08_2025.pdf` — update filename and link when replacing.
+
+## Running tests
+
+```bash
+# Kill only the port used by this project's test server — do NOT kill agent-browser or Chrome,
+# as other projects on this machine may be running their own agent-browser tests in parallel.
+lsof -ti tcp:8899 | xargs kill -9 2>/dev/null
+npm test
+```
+
+The test suite (`tests/site.test.ts`) uses Vitest + agent-browser. Port 8899 is this project's HTTP server port.
+
+Each test run uses a unique `--session tolsi-website-e2e-{random-uid}` so it gets an isolated browser tab and doesn't collide with other concurrent agent-browser sessions on the same machine.

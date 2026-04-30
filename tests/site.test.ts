@@ -5,11 +5,12 @@ import { describe, it, expect, beforeAll, afterAll } from "vitest";
 const PORT = 8899;
 const BASE_URL = `http://localhost:${PORT}`;
 const PROJECT_DIR = new URL("..", import.meta.url).pathname;
+const SESSION = `tolsi-website-e2e-${Math.random().toString(36).slice(2, 10)}`;
 
 let server: ChildProcess;
 
 function ab(args: string): string {
-  return execSync(`agent-browser ${args}`, { encoding: "utf8" }).trim();
+  return execSync(`agent-browser --session ${SESSION} ${args}`, { encoding: "utf8" }).trim();
 }
 
 function abEval(js: string): string {
