@@ -55,6 +55,7 @@ function freshUrl() {
 
 function loadAt(w: number, h: number) {
   ab(`set viewport ${w} ${h}`);
+  execSync("sleep 0.5");
   ab(`open ${freshUrl()}`);
   ab("wait --load networkidle");
 }
