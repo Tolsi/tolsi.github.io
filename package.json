@@ -2,10 +2,16 @@
   "name": "tolsi-github-io-tests",
   "private": true,
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "build": "npm run build:css && npm run build:html && npm run build:assets",
+    "build:css": "cleancss -o dist/assets/styles.css assets/styles.css",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --minify-css true --minify-js true -o dist/index.html index.html",
+    "build:assets": "node scripts/copy-assets.js"
   },
   "devDependencies": {
-    "vitest": "^2.0.0",
-    "typescript": "^5.0.0"
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
   }
 }
