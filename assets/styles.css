@@ -510,14 +510,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive: small tablet (<=768px) — flex direction for info-list */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .section-info-list .info-list-wrapper {
     flex-direction: row
   }
 }
 
-/* Responsive: tablet (<=767px) */
-@media screen and (max-width: 767px) {
+/* Responsive: tablet (<=899px) */
+@media screen and (max-width: 899px) {
   .footer-content-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr
@@ -541,20 +541,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .info-list-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
   }
 
   .info-list-column {
-    width: 100%
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 40%;
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%
+  }
+
+  .info-list-column:first-child {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
   }
 }
 
-/* Responsive: disciplines sub-row collapses below 900px */
-@media screen and (max-width: 899px) {
+/* Responsive: disciplines sub-row collapses below 480px */
+@media screen and (max-width: 479px) {
   .disciplines-sub-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

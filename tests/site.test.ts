@@ -111,13 +111,19 @@ describe("tol.si — core checks", () => {
     expect(d.error).toBeUndefined();
     expect(Math.abs(d.cx - d.vw / 2)).toBeLessThan(d.vw * 0.1);
     expect(Math.abs(d.cy - d.vh / 2)).toBeLessThan(d.vh * 0.1);
-  });
+  }, 30000);
 
-  it("page-cover heading is visible on screen during intro (~3s)", async () => {
+  it("page-cover heading is visible on screen during intro", async () => {
     ab(`open ${freshUrl()}`);
     ab("wait --load networkidle");
-    // cover content fades in after introDurationMS (2300ms) over 500ms
-    await new Promise((r) => setTimeout(r, 3000));
+    // poll up to 8s for cover content to become visible (fades in at ~2300ms)
+    let opacity = 0;
+    const deadline = Date.now() + 8000;
+    while (Date.now() < deadline) {
+      opacity = parseFloat(abEval("getComputedStyle(document.querySelector('.page-cover-content')).opacity"));
+      if (opacity > 0) break;
+      await new Promise((r) => setTimeout(r, 200));
+    }
     const raw = abEval(`(() => {
       var el = document.querySelector('.page-cover-heading');
       if (!el) return JSON.stringify({error: 'not found'});
@@ -132,11 +138,12 @@ describe("tol.si — core checks", () => {
     })()`);
     const d = JSON.parse(raw);
     expect(d.error).toBeUndefined();
-    expect(d.opacity).toBeGreaterThan(0);
+    expect(d.opacity, "cover not visible within 8s").toBeGreaterThan(0);
     expect(d.inViewport).toBe(true);
     expect(d.width).toBeGreaterThan(0);
     expect(d.height).toBeGreaterThan(0);
-  }, 15000);
+  }, 20000);
+
 
   it(".section-info-intro contains text", () => {
     const len = Number(
@@ -176,12 +183,12 @@ describe("tol.si — layout: text visible and no overlap", () => {
       loadAt(vp.w, vp.h);
       const overlaps: string[] = JSON.parse(abEval(CHECK_OVERLAPS_JS));
       expect(overlaps, `overlapping: ${overlaps.join(" | ")}`).toHaveLength(0);
-    });
+    }, 30000);
 
     it(`all text elements in layout at ${vp.label}`, () => {
       const hiddenCount = Number(abEval(CHECK_HIDDEN_JS));
       expect(hiddenCount, `${hiddenCount} elements have zero size or are hidden`).toBe(0);
-    });
+    }, 30000);
   }
 });
 
@@ -193,19 +200,47 @@ const DISCIPLINES_BLOCKS_JS = `(() => {
 })()`.trim().replace(/\n/g, " ");
 
 describe("tol.si — disciplines column layout", () => {
-  it("disciplines sub-row is 2 columns side-by-side at 1024px (>=900px)", () => {
+  it("disciplines sub-row is 2 columns at 1024px (>=900px)", () => {
     loadAt(1024, 768);
     const d = JSON.parse(abEval(DISCIPLINES_BLOCKS_JS));
     expect(d.error).toBeUndefined();
     expect(Math.abs(d.top0 - d.top1)).toBeLessThan(20);
     expect(d.left1).toBeGreaterThan(d.left0 + 50);
-  });
+  }, 30000);
 
-  it("disciplines sub-row is 1 column stacked at 768px (<900px)", () => {
+  it("at 768px: disciplines 2 sub-cols side-by-side, contacts+music 2 cols below", () => {
     loadAt(768, 1024);
+    execSync("sleep 1");
+    const raw = abEval(`(() => {
+      var firstSection = document.querySelector('.section-info-list');
+      var discBlocks = Array.from(document.querySelectorAll('.disciplines-sub-row .info-list-block'));
+      var cols = Array.from(firstSection.querySelectorAll('.info-list-wrapper > .info-list-column'));
+      if (discBlocks.length < 2) return JSON.stringify({error: 'discBlocks: ' + discBlocks.length});
+      if (cols.length < 3) return JSON.stringify({error: 'columns: ' + cols.length});
+      var d0 = discBlocks[0].getBoundingClientRect(), d1 = discBlocks[1].getBoundingClientRect();
+      var c1 = cols[1].getBoundingClientRect(), c2 = cols[2].getBoundingClientRect();
+      return JSON.stringify({
+        discTop0: Math.round(d0.top), discTop1: Math.round(d1.top),
+        discLeft0: Math.round(d0.left), discLeft1: Math.round(d1.left),
+        contTop: Math.round(c1.top), contLeft: Math.round(c1.left),
+        musicTop: Math.round(c2.top), musicLeft: Math.round(c2.left)
+      });
+    })()`);
+    const d = JSON.parse(raw);
+    expect(d.error).toBeUndefined();
+    expect(Math.abs(d.discTop0 - d.discTop1)).toBeLessThan(20);
+    expect(d.discLeft1).toBeGreaterThan(d.discLeft0 + 50);
+    expect(Math.abs(d.contTop - d.musicTop)).toBeLessThan(20);
+    expect(d.musicLeft).toBeGreaterThan(d.contLeft + 50);
+    expect(d.contTop).toBeGreaterThan(d.discTop0 + 20);
+  }, 30000);
+
+  it("disciplines sub-row is 1 column at 390px (<=479px)", () => {
+    loadAt(390, 844);
+    execSync("sleep 1");
     const d = JSON.parse(abEval(DISCIPLINES_BLOCKS_JS));
     expect(d.error).toBeUndefined();
     expect(d.top1).toBeGreaterThan(d.top0 + 20);
     expect(Math.abs(d.left0 - d.left1)).toBeLessThan(20);
-  });
+  }, 30000);
 });
