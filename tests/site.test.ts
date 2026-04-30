@@ -68,7 +68,7 @@ beforeAll(() => {
   execSync("sleep 0.5");
   ab(`open ${freshUrl()}`);
   ab("wait --load networkidle");
-});
+}, 30000);
 
 afterAll(() => {
   ab("close");
@@ -112,6 +112,31 @@ describe("tol.si — core checks", () => {
     expect(Math.abs(d.cx - d.vw / 2)).toBeLessThan(d.vw * 0.1);
     expect(Math.abs(d.cy - d.vh / 2)).toBeLessThan(d.vh * 0.1);
   });
+
+  it("page-cover heading is visible on screen during intro (~3s)", async () => {
+    ab(`open ${freshUrl()}`);
+    ab("wait --load networkidle");
+    // cover content fades in after introDurationMS (2300ms) over 500ms
+    await new Promise((r) => setTimeout(r, 3000));
+    const raw = abEval(`(() => {
+      var el = document.querySelector('.page-cover-heading');
+      if (!el) return JSON.stringify({error: 'not found'});
+      var content = document.querySelector('.page-cover-content');
+      var r = el.getBoundingClientRect();
+      return JSON.stringify({
+        opacity: parseFloat(getComputedStyle(content).opacity),
+        inViewport: r.top >= 0 && r.bottom <= window.innerHeight && r.left >= 0 && r.right <= window.innerWidth,
+        width: Math.round(r.width),
+        height: Math.round(r.height)
+      });
+    })()`);
+    const d = JSON.parse(raw);
+    expect(d.error).toBeUndefined();
+    expect(d.opacity).toBeGreaterThan(0);
+    expect(d.inViewport).toBe(true);
+    expect(d.width).toBeGreaterThan(0);
+    expect(d.height).toBeGreaterThan(0);
+  }, 15000);
 
   it(".section-info-intro contains text", () => {
     const len = Number(
