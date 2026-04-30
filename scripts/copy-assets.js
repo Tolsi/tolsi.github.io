@@ -22,6 +22,12 @@ function copyFile(src, dest) {
   fs.copyFileSync(src, dest);
 }
 
+// root files that must be served at the domain root
+['robots.txt', 'sitemap.xml', 'llms.txt'].forEach(function (name) {
+  const src = path.join(ROOT, name);
+  if (fs.existsSync(src)) copyFile(src, path.join(DIST, name));
+});
+
 // assets: copy everything except styles.css (already minified separately)
 const assetsDir = path.join(ROOT, 'assets');
 fs.mkdirSync(path.join(DIST, 'assets'), { recursive: true });

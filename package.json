@@ -5,7 +5,7 @@
     "test": "vitest run",
     "build": "npm run build:css && npm run build:html && npm run build:assets",
     "build:css": "cleancss -o dist/assets/styles.css assets/styles.css",
-    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --minify-css true --minify-js true -o dist/index.html index.html",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --minify-css true --minify-js true -o dist/index.html index.html && html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --minify-css true --minify-js true -o dist/it.html it.html",
     "build:assets": "node scripts/copy-assets.js"
   },
   "devDependencies": {
