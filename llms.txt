@@ -1,0 +1,39 @@
+# Sergey Tolsi Tolmachev
+
+> Sergey Tolmachev (known as Tolsi) is a software architect and CTO with 12+ years of experience building distributed systems, blockchain infrastructure, and early-stage products. He is open to CTO and tech lead engagements.
+
+## Professional Identity
+
+- Fractional CTO and software architect specializing in blockchain, distributed systems, and Web3
+- Built btcpay.ru — the first Bitcoin-to-ruble exchange service in Russia (2012)
+- Lead analyst and engineering leader across fintech, DeFi, and creative tech
+- Public speaker on blockchain technology (Waves 3.0 Meetup 2019; blockchain masterclass 2018)
+- Podcast guest on engineering leadership (Blum Chats, 2025, EN)
+- Scala, Rust, Kotlin, Python, Go, Java developer
+
+## Disciplines
+
+Software Architecture, Blockchain Development, Distributed Systems, Research and Development, Prototyping, Deployment, Technical Leadership, DevOps, Embedded Systems, Smart Contracts, Cryptography
+
+## Selected Work
+
+- btcpay.ru — first Bitcoin-to-ruble exchange in Russia (2012)
+- Terra support (terra.support) — metaphoric associative card platform (2020–present)
+- Defragmentation — visual artwork exhibited in Moscow (2023)
+- Release.space — art space and cafe in Tbilisi (2023–2024)
+
+## Public Talks
+
+- Blum Chats podcast — working as a lead analyst (2025, EN): https://youtu.be/sG_eol3IVb8
+- Waves 3.0 Meetup — cryptographically verified Niva car giveaway (2019, RU): https://youtu.be/Ts5pPBncBb8?t=2261
+- Blockchain development masterclass (2018, RU): https://www.youtube.com/watch?v=czyABHsoJH4
+- Pro Bitcoin podcast episode 48 (2017, RU): https://www.youtube.com/watch?v=FKqiGvRrSLo
+
+## Contact
+
+- Site: https://tol.si
+- Email: tolsi.ru@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tolsi
+- GitHub: https://github.com/tolsi
+- Telegram: https://t.me/tolsi1
+- CV: https://tol.si/assets/_Tolmachev_CV_08_2025.pdf
