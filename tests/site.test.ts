@@ -98,6 +98,21 @@ describe("tol.si — core checks", () => {
     expect(parseFloat(opacityAfter)).toBe(1);
   }, 15000);
 
+  it("page-cover heading is viewport-centered during intro", () => {
+    ab(`open ${freshUrl()}`);
+    ab("wait --load networkidle");
+    const raw = abEval(`(() => {
+      var el = document.querySelector('.page-cover-heading');
+      if (!el) return JSON.stringify({error: 'not found'});
+      var r = el.getBoundingClientRect();
+      return JSON.stringify({cx: Math.round(r.left + r.width/2), cy: Math.round(r.top + r.height/2), vw: window.innerWidth, vh: window.innerHeight});
+    })()`);
+    const d = JSON.parse(raw);
+    expect(d.error).toBeUndefined();
+    expect(Math.abs(d.cx - d.vw / 2)).toBeLessThan(d.vw * 0.1);
+    expect(Math.abs(d.cy - d.vh / 2)).toBeLessThan(d.vh * 0.1);
+  });
+
   it(".section-info-intro contains text", () => {
     const len = Number(
       abEval("document.querySelector('.section-info-intro').innerText.trim().length")

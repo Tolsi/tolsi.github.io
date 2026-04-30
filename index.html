@@ -93,7 +93,7 @@
 
     /* Page cover and transition visibility */
     body .transition { display: block; }
-    .page-cover { display: block; }
+    .page-cover { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
     .transition-backdrop, .main_wrapper { opacity: 0; }
 
     /* Scrollbar hide */
@@ -165,10 +165,7 @@
     </div>
   </div>
   <div class="page-cover page-cover-information">
-    <div class="container">
-      <div style="opacity:0" class="page-cover-content"><h3 class="page-cover-heading text-super">LOADING</h3></div>
-    </div>
-    <div class="page-padding"></div>
+    <div style="opacity:0" class="page-cover-content"><h3 class="page-cover-heading text-super">LOADING</h3></div>
   </div>
   <main class="main_wrapper">
     <section class="section-info-intro">
@@ -190,6 +187,9 @@
 
           <div class="info-list-wrapper">
             <div class="info-list-column disciplines-column">
+              <div class="info-list-block text-medium">
+                <a href="assets/_Tolmachev_CV_08_2025.pdf" target="_blank">I'm looking for CTO/tech lead role, check my CV!</a>
+              </div>
               <div class="info-list-block discipline-list-block is-first">
                 <div class="info-list-item">
                   <div class="info-list-item-text text-medium">→</div>
@@ -249,11 +249,6 @@
                   <div class="info-list-item-text text-medium">→</div>
                   <div class="info-list-item-text text-medium">Exhibition</div>
                 </div>
-              </div>
-            </div>
-            <div class="info-list-column disciplines-column">
-              <div class="info-list-block text-medium">
-                <a href="assets/_Tolmachev_CV_08_2025.pdf" target="_blank">I'm looking for CTO/tech lead role, check my CV!</a>
               </div>
             </div>
             <div class="info-list-column disciplines-column">

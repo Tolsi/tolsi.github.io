@@ -320,11 +320,15 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 1900;
   display: none;
-  padding-right: 4em;
-  padding-left: 4em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #000;
-  -webkit-transition: margin-bottom .5s;
-  transition: margin-bottom .5s;
   color: #000
 }
 
